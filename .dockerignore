@@ -1,5 +1,9 @@
-# ignore the .gitignore file
+# ignore the git files
 .gitignore
+.git
+
+# img carpet
+img
 
 # README file not use
 README.md

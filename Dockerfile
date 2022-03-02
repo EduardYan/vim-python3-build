@@ -29,7 +29,7 @@ RUN cd vim-8 \
 RUN cd config && \ 
     mv .vimrc /root && \
     cd /root/ && \ 
-    rm -rf build && \
+    rm -rf config && \
     cd
 
 # Lauching a shell

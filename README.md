@@ -26,3 +26,7 @@ $ vim --version | grep python
 ![vim-image](./img/vim-image.png)
 
 _Now your vim editor have python3 support, util for install plugins._
+
+
+## Errors Report.
+<a href="mailto:eduarygp@gmail.com" target="_blank" rel="norreferer">Contact Me.</a>

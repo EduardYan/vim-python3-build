@@ -1,7 +1,7 @@
 " This is a basic configuration for vim
 
 " See syntax
-set syntax on
+syntax on
 
 set encoding=utf-8
 
