@@ -1,0 +1,3 @@
+py3-distutils-extra
+build-base
+ncurses-dev

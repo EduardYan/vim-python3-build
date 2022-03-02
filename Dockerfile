@@ -2,20 +2,20 @@ FROM python:3.11.0a5-alpine3.15
 
 MAINTAINER Daniel Yanes
 
-# Update and installing dependencies packages
-RUN apk update \
-    && apk add --no-cache py3-distutils-extra build-base ncurses-dev
-    
-
-
 USER root
 
-# path for build
+# Path for build
 WORKDIR /root/build
 
 COPY . .
 
-# begin to build
+# Update and installing dependencies packages
+RUN apk update \
+    && pip install --upgrade pip \
+    && python3 install-packages.py
+
+
+# Begin to build
 RUN cd vim-8 \
     && chmod 776 configure src/configure src/auto/configure \
     && cd src \
@@ -24,6 +24,12 @@ RUN cd vim-8 \
     && make \
     && make install
 
+# Configurations and cleaning
+RUN cd config && \ 
+    mv .vimrc /root && \
+    cd /root/ && \ 
+    rm -rf build && \
+    cd
 
-# lauching a shell
+# Lauching a shell
 CMD ["/bin/sh"]
