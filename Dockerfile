@@ -27,8 +27,7 @@ RUN cd vim-8 \
 
 
 # Configurations and cleaning
-RUN cd config && \ 
-    # mv .vimrc /root && \ # not move the file error is give, solved in linux
+RUN python3 config.py && \
     cd /root/ && \ 
     rm -rf vim-8 config
 
