@@ -1,9 +1,9 @@
 " This is a basic configuration for vim
 
 " See syntax
-syntax on
+" syntax on
 
-set encoding=utf-8
+" set encoding=utf-8
 
 " No compatible with vi
 " set nocompatible
