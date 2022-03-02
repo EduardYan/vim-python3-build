@@ -27,7 +27,7 @@ RUN cd vim-8 \
 
 # Configurations and cleaning
 RUN cd config && \ 
-    cp -rf .vimrc /root && \
+    mv .vimrc /root && \
     cd /root/ && \ 
     rm -rf build && \
     cd

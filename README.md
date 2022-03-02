@@ -17,4 +17,12 @@ __After of get the image and run a container, you can execute:__
 $ vim
 ```
 
+__Now you can make sure that it is compiled with python3:__
+
+```bash
+$ vim --version | grep python
+```
+
+![vim-image](./img/vim-image.png)
+
 _Now your vim editor have python3 support, util for install plugins._
