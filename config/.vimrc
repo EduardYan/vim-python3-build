@@ -44,7 +44,6 @@ set colorcolumn=100
 set splitbelow
 set splitright
 
-au VimResized *:wincmd = " resize split when windows are reduce
 
 " show cursor line
 set mouse=a

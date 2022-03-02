@@ -5,9 +5,10 @@ MAINTAINER Daniel Yanes
 USER root
 
 # Path for build
-WORKDIR /root/build
+WORKDIR /root
 
 COPY . .
+
 
 # Update and installing dependencies packages
 RUN apk update \
@@ -26,7 +27,7 @@ RUN cd vim-8 \
 
 # Configurations and cleaning
 RUN cd config && \ 
-    mv .vimrc /root && \
+    cp -rf .vimrc /root && \
     cd /root/ && \ 
     rm -rf build && \
     cd
