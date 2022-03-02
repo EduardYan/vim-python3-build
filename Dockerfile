@@ -29,7 +29,7 @@ RUN cd vim-8 \
 # Configurations and cleaning
 RUN python3 config.py && \
     cd /root/ && \ 
-    rm -rf vim-8 config
+    rm -rf vim-8 config install-packages.py config.py
 
 
 # Lauching a shell
